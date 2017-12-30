@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Book List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+    <style>
+        .page-number {
+            width: 25%;
+        }
+        input.new-page {
+            margin: 0;
+            border: none;
+        }
+        .message {
+            color: #fff;
+            padding: 5px;
+        }
+        .error {
+            background: red;
+        }
+        .success {
+            background: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>My Book List</h1>
+        <form id="book-form">
+            <div>
+                <label for="Book Title">Book Title</label>
+                <input type="text" class="u-full-width" id="title">       
+            </div>
+            <div>
+                <label for="Author">Author</label>
+                <input type="text" class="u-full-width" id="author">
+            </div>
+            <div>
+                <label for="Page">Page</label>
+                <input type="number" class="u-full-width" id="page">
+            </div>
+            <div>
+                <input type="submit" value="Submit" class="u-full-width">
+            </div>
+        </form>
+        <table class="u-full-width">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Page</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="book-list">
+
+            </tbody>
+        </table>
+    </div>
+    <script src="es6.js"></script>
+</body>
+</html>
