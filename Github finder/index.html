@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://bootswatch.com/4/yeti/bootstrap.min.css    ">
+    <title>Github Finder</title>
+</head>
+<body>
+    <div class="container test">
+        <div class="row">
+            <div class="col-md-12">
+                <nav class="navbar navbar-dark bg-primary">
+                    <a href="#" class="navbar-brand">Github Finder</a>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <div class="container search"> 
+        <div class="card border-primary mt-3 mb-3 search-result">
+            <div class="card-header bg-primary text-white">Search Github Users</div>
+            <div class="card-body  ">
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="description ">Enter a username to get his profile</label>
+                            <input type="text" class="form-control" id="searchUser" placeholder="Github username">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="profile"></div>
+        <div id="repos"></div>
+    </div>
+
+    <footer class="bg-primary">
+        <div class="container-fluid">
+            <div class=" text-white pb-2 pt-2 text-center">
+                © Github Finder
+            </div>
+        </div>
+    </footer>
+
+    <script src="github.js"></script>
+    <script src="ui.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
+
+
+
+
