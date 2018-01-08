@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Task List</title>
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="title">
+                <p class="hamburger">&#9776;</p>
+                <h1>Your <br>Things</h1>
+                <p class="small theDate"></p>
+            </div>
+            <div class="progress">
+                <div class="done">
+                    <p>10</p>
+                    <p>Done</p>
+                </div>
+                <div class="left">
+                    <p>24</p>
+                    <p>Left</p>
+                </div>
+            </div>
+        </div>
+        <div class="shadow"></div>
+    </header>
+    <div class="bg-modal">
+        <span class="close-modal">&#10006</span>
+        <div class="bg-img deer"></div>
+        <div class="bg-img hills"></div>
+        <div class="bg-img houses"></div>
+        <div class="bg-img landscape"></div>
+        <div class="bg-img mountains"></div>
+    </div>
+    <div class="tasklist">
+        <div class="container">
+            <p class="small">INBOX</p>
+        </div>
+        <div class="container">
+                <ul class="things">
+                        <li class="list-item">First Task <span class="delete">&#10006</span></li>
+                        <li class="list-item">Second Task <span class="delete">&#10006</span></li>
+                        <li class="list-item">Third Thing <span class="delete">&#10006</span></li>
+                        <li class="list-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid maxime fuga hic quaerat! Autem, provident. <span class="delete">&#10006</span></li>
+                        <li class="list-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tempora? <span class="delete">&#10006</span></li>
+                    </ul>
+                    
+        </div>
+        <div class="container">
+                <button class="add-btn">+</button>
+        </div>
+    </div>
+    <div class="modal">
+        <div class="modal-inner">
+            <span class="goBack">&#10006</span>
+            <div class="clear"></div>
+            <h1>Add new thing</h1>
+            <form class="form">
+                <input type="text" class="taskInput" placeholder="New thing">
+                <input type="submit" value="Add new thing" class="submit-btn">
+            </form>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
